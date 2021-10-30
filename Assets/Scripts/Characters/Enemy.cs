@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    private void Start()
+    protected override void Awaken()
     {
-        //_currentState = new PlayerStanding(this);
+        
+    }
+
+    protected override void Start()
+    {
+        
     }
 }

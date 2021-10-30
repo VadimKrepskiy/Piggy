@@ -6,13 +6,14 @@ public class Player : Character
 {
     private PlayerStateMachine _stateMachine;
 
-    private void Awaken()
+    protected override void Awaken()
     {
+        base.Awaken();
         _stateMachine = GetComponent<PlayerStateMachine>();
     }
 
-    private void Start()
+    protected override void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        base.Start();
     }
 }

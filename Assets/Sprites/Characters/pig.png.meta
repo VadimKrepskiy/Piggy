@@ -4,19 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5792511334730316588
-    second: pig_0
+    second: bottom_pig_0
   - first:
       213: 1382654831687872026
-    second: pig_1
+    second: bottom_pig_1
   - first:
       213: 40422208409524962
-    second: pig_2
+    second: bottom_pig_2
   - first:
       213: -4671057516089923990
-    second: pig_3
+    second: bottom_pig_3
   - first:
       213: -7706892896796293290
     second: pig_4
+  - first:
+      213: 1081805759769808109
+    second: top_pig_0
+  - first:
+      213: -7468113972647155196
+    second: top_pig_1
+  - first:
+      213: -8086054807189118127
+    second: top_pig_2
+  - first:
+      213: -9110800692481883777
+    second: top_pig_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,15 +142,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pig_0
+      name: bottom_pig_0
       rect:
         serializedVersion: 2
         x: 509
         y: 1493
         width: 687
-        height: 503
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,15 +163,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_1
+      name: bottom_pig_1
       rect:
         serializedVersion: 2
         x: 2024
         y: 1494
         width: 671
-        height: 505
+        height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,15 +184,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_2
+      name: bottom_pig_2
       rect:
         serializedVersion: 2
         x: 627
         y: 356
         width: 447
-        height: 814
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,15 +205,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_3
+      name: bottom_pig_3
       rect:
         serializedVersion: 2
         x: 2150
         y: 344
         width: 425
-        height: 713
+        height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +234,7 @@ TextureImporter:
         width: 6
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,6 +242,90 @@ TextureImporter:
       bones: []
       spriteID: 657c9744ebd9b0590800000000000000
       internalID: -7706892896796293290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: top_pig_0
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1793
+        width: 687
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec0d0b5b98530f00800000000000000
+      internalID: 1081805759769808109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: top_pig_1
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 1794
+        width: 671
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a2c3ed8edeb5890800000000000000
+      internalID: -7468113972647155196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: top_pig_2
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 756
+        width: 447
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153272f9eff88cf80800000000000000
+      internalID: -8086054807189118127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: top_pig_3
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 624
+        width: 425
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f710c319a0fef8180800000000000000
+      internalID: -9110800692481883777
       vertices: []
       indices: 
       edges: []
