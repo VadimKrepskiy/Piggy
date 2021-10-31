@@ -53,12 +53,12 @@ public class Character : MonoBehaviour
             _bottomSpriteRenderer.sortingOrder = _sortingOrder;
     }
 
-    public void Move()
+    public virtual void Move()
     {
         transform.position += (Vector3)_direction * speed * Time.deltaTime;
     }
 
-    public void Turn(string direction)
+    public virtual void Turn(string direction)
     {
         switch(direction)
         {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerStanding : State<Player>
 {
 
-    public PlayerStanding(Player player, StateMachine<Player> stateMachine) : base(player, stateMachine) { }
+    public PlayerStanding(Player character, StateMachine<Player> stateMachine) : base(character, stateMachine) { }
 
     public override void Enter()
     {
