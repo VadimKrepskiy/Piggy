@@ -98,6 +98,7 @@ public class Enemy : Character
                     _direction = 2*Vector2.right;
                     _topSpriteRenderer.sprite = _sprites[8];
                     _bottomSpriteRenderer.sprite = _sprites[12];
+                    _bottomSpriteRenderer.transform.localPosition = new Vector3(0f, -0.55f, 0f);
                     break;
                 }
             case "L":
@@ -105,6 +106,7 @@ public class Enemy : Character
                     _direction = 2*Vector2.left;
                     _topSpriteRenderer.sprite = _sprites[9];
                     _bottomSpriteRenderer.sprite = _sprites[13];
+                    _bottomSpriteRenderer.transform.localPosition = new Vector3(0f, -0.55f, 0f);
                     break;
                 }
             case "D":
@@ -112,12 +114,14 @@ public class Enemy : Character
                     _direction = new Vector2(-0.25f, -2f);
                     _topSpriteRenderer.sprite = _sprites[10];
                     _bottomSpriteRenderer.sprite = _sprites[14];
+                    _bottomSpriteRenderer.transform.localPosition = new Vector3(0f, -0.55f, 0f);
                     break;
                 }
             case "U":
                 {
                     _direction = new Vector2(0.25f, 2f);
                     _topSpriteRenderer.sprite = _sprites[11];
+                    _bottomSpriteRenderer.transform.localPosition = new Vector3(0f, -0.55f, 0f);
                     _bottomSpriteRenderer.sprite = _sprites[15];
                     break;
                 }

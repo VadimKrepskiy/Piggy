@@ -25,10 +25,11 @@ public class Player : Character
         base.Start();
     }
 
-
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
+        if (collision.tag == "Coin")
+            Destroy(collision.gameObject);
     }
 
     protected override void OnTriggerStay2D(Collider2D collision)

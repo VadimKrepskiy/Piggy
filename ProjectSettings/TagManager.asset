@@ -7,7 +7,7 @@ TagManager:
   - Barrier
   - Hiding
   - Enemy
-  - NoTurn
+  - Coin
   layers:
   - Default
   - TransparentFX
