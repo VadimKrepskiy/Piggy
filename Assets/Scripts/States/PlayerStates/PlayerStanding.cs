@@ -19,9 +19,13 @@ public class PlayerStanding : State<Player>
 
     public override void Update()
     {
-        if(_character.OnMove)
+        if(_character.IsDamaged)
+            _stateMachine.SetState(new PlayerDying(_character, _stateMachine));
+        else if (_character.OnMove)
         {
             _stateMachine.SetState(new PlayerMoving(_character, _stateMachine));
         }
+        else if(_character.IsThrownBomb)
+            _stateMachine.SetState(new PlayerBombThrowing(_character, _stateMachine));
     }
 }

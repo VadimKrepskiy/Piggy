@@ -21,8 +21,15 @@ public class EnemyPatrolling : State<Enemy>
 
     public override void Update()
     {
-        _character.CheckDestination();
-        _character.Move();
+        if (_character.IsDamaged)
+            _stateMachine.SetState(new EnemyDying(_character, _stateMachine));
+        else if (_character._visibilityController.IsPlayerDetected)
+            _stateMachine.SetState(new EnemyChase(_character, _stateMachine));
+        else
+        {
+            _character.CheckDestination();
+            _character.Move();
+        }
     }
 
 }

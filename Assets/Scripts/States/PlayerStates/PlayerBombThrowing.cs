@@ -8,7 +8,8 @@ public class PlayerBombThrowing : State<Player>
 
     public override void Enter()
     {
-
+        _character.ThrowBomb();
+        _stateMachine.SetState(new PlayerStanding(_character, _stateMachine));
     }
 
     public override void Exit()
@@ -18,6 +19,7 @@ public class PlayerBombThrowing : State<Player>
 
     public override void Update()
     {
-
+        if (_character.IsDamaged)
+            _stateMachine.SetState(new PlayerDying(_character, _stateMachine));
     }
 }

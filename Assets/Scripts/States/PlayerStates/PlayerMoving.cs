@@ -18,7 +18,9 @@ public class PlayerMoving : State<Player>
 
     public override void Update()
     {
-        if (!_character.OnMove || !_character.IsCanMove)
+        if (_character.IsDamaged)
+            _stateMachine.SetState(new PlayerDying(_character, _stateMachine));
+        else if (!_character.OnMove || !_character.IsCanMove)
             _stateMachine.SetState(new PlayerStanding(_character, _stateMachine));
         else _character.Move();
     }
