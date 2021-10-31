@@ -37,6 +37,14 @@ public class Character : MonoBehaviour
             _bottomSpriteRenderer.sortingOrder = collision.GetComponent<SpriteRenderer>().sortingOrder - 1;
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Barrier")
+            IsCanMove = false;
+        if (collision.tag == "Hiding")
+            _bottomSpriteRenderer.sortingOrder = collision.GetComponent<SpriteRenderer>().sortingOrder - 1;
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Barrier")
@@ -80,7 +88,7 @@ public class Character : MonoBehaviour
                 }
             case "D":
                 {
-                    _direction = Vector2.down;
+                    _direction = new Vector2(-0.125f, -1f);
                     _topSpriteRenderer.sprite = sprites[2];
                     _topSpriteRenderer.transform.localPosition = childrenPositions[2];
                     _thisCollider.size = thisColliderSizes[2];
@@ -92,7 +100,7 @@ public class Character : MonoBehaviour
                 }
             case "U":
                 {
-                    _direction = Vector2.up;
+                    _direction = new Vector2(0.125f, 1f);
                     _topSpriteRenderer.sprite = sprites[3];
                     _topSpriteRenderer.transform.localPosition = childrenPositions[3];
                     _thisCollider.size = thisColliderSizes[3];
