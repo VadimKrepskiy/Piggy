@@ -3,7 +3,7 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     [SerializeField] float _speed;
-    [SerializeField] Vector2[] _childrenPositions;
+    [SerializeField] protected Vector2[] _childrenPositions;
     [SerializeField] Vector2[] _thisColliderSizes, _thisColliderOffsets;
 
     [SerializeField] protected Sprite[] _sprites;
